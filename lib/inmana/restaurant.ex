@@ -1,5 +1,8 @@
 defmodule Inmana.Restaurant do
   use Ecto.Schema
+
+  alias Inmana.Supply
+
   import Ecto.Changeset
 
   @primary_key {:id, :binary_id, autogenerate: true}
