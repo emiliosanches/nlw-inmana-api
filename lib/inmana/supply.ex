@@ -6,6 +6,8 @@ defmodule Inmana.Supply do
 
   @primary_key {:id, :binary_id, autogenerate: true}
 
+  @foreign_key_type :binary_id
+
   @required_params [:description, :expiration_date, :responsible, :restaurant_id]
 
   @derive {Jason.Encoder, only: @required_params ++ [:id]}
